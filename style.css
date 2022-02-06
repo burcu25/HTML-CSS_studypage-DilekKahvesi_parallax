@@ -1,0 +1,149 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    height: 100%;
+}
+.background--image1{
+    background-image: url(./images/ana_ekran.jpg);
+    min-height: 100%;
+
+}
+.background--image2{
+    background-image: url(./images/tarçınlı.jpg);
+    height: 80%;
+}
+.background--image3{
+    background-image: url(./images/dolgana.jpg);
+    height: 80%;
+}
+.background--image4{
+    background-image: url(./images/mocca-punch.jpg);
+    height: 80%;
+    
+}
+.background--image5{
+    background-image: url(./images/llatte.jpg);
+    min-height: 80%;
+
+}
+.background--image6{
+    background-image: url(./images/parfe.jpg);
+    min-height: 100%;
+}
+.background--image1,
+.background--image2,
+.background--image3,
+.background--image4,
+.background--image5,
+.background--image6{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    opacity: 0.8;
+}
+.heading-container{
+    text-align: center;
+    top: 60%;
+    width: 100%;
+    position: absolute;
+    font-size: 5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.5rem;
+    
+}
+.heading-container__heading{
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    outline: 0.5rem inset chocolate;
+    outline-offset: 1rem;
+}
+/* .heading-container__logo{
+    width: 20%;
+    margin-bottom: 2rem;
+    opacity: 0.3;
+} */
+.heading-container__text{
+    background-color: black;
+    color: white;
+    padding: 0.7rem;
+    line-height: 4rem;
+    text-transform: capitalize;
+    border-radius: 0.7rem 0rem 0.7rem 0rem;
+    outline: 0.4rem inset chocolate;
+    outline-offset: 0.2rem;
+
+}
+.section{
+    text-align: center;
+    padding: 3rem 5rem;
+}
+.section-light{
+    background-color: #f2f2f2;
+    color: #555;
+    line-height: 1.8rem;
+}
+.section-dark{
+    background-color: rgb(73, 51, 35);
+    color: rgb(209, 182, 144);
+    line-height: 1.8rem;
+}
+
+@media(max-width:768px){
+    .heading-container{
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        
+    }
+    .heading-container__heading{
+        padding: 0.7rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        outline: 0.4rem inset chocolate;
+        outline-offset: 0.5rem;
+        
+    }
+
+    .heading-container__text{
+        padding: 0.7rem;
+        border-radius: 0.7rem 0rem 0.7rem 0rem;
+        outline: 0.4rem inset chocolate;
+        outline-offset: 0.2rem;
+        line-height: 3rem;
+        /* font-size: 0.5rem; */
+    }
+
+    .section{
+        padding: 1.5rem 2rem;
+    }
+    
+/* .heading-container__logo{
+
+    width: 50%;
+} */
+    
+}
+
+@media(max-width:500px){
+    .background--image1,
+.background--image2,
+.background--image3,
+.background--image4
+.background--image5
+.background--image6{
+
+    background-attachment: scroll;
+
+}
+}
